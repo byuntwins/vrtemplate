@@ -20,11 +20,13 @@ html, body {
 /**container spacing**/
 .container {
   width: 100%;
+  margin: 0;
+  padding:0;
 }
 
 /**image column centering**/
 .img-center {
-  margin:0 auto;
+  margin: 0;
   display: block;
 }
 
@@ -89,6 +91,7 @@ html, body {
 /**disappear hamburger, close**/
 #hamburger, #close {
   display: none;
+  opacity: 0;
 }
 
 /**shrink**/
@@ -104,7 +107,7 @@ html, body {
 }
 
 /**mobile media query**/
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   #hamburger, #close {
     color: black;
     position: absolute;
@@ -112,9 +115,10 @@ html, body {
     right: 0;
     padding: 12px 35px;
     z-index: 999999;
+    opacity: 1;
   }
 
-  #hamburger {
+  #hamburger{
     display: inline-block;
   }
 
@@ -186,7 +190,7 @@ html, body {
 }
 
 /**media queries for the titles**/
-@media (min-width:800px){
+@media (min-width:767px){
   .maintitle {
     font-size: 3.7rem;
   }
@@ -195,28 +199,70 @@ html, body {
   }
 }
 
-/**icon row**/
+@media (min-width:400px){
+  .maintitle {
+    font-size: 2.8rem;
+  }
+  .subtitle {
+    font-size:1.4rem;
+  }
+}
+
+/**icon row
 #iconRow {
   padding: 60px 0;
-}
+}**/
 
-/**pic**/
+/**pic
 .container .row img {
-  margin: 0 0 30px;
+  margin: 0;
   width: 100%;
+}**/
+
+/**.col-md-6 {
+  margin: 0;
+}**/
+
+
+/**about**/
+.about-textbox{
+  background-color: #FFF;
+  padding: 4.1em 4em 3.8em 4em;
+  outline: 2px solid black;
+  outline-offset: -2em;
+  position: relative;
+  margin-top: 2em;
 }
 
-.col-md-6 {
-  margin: 0 0 30px;
+.about-textbox h1{
+  position: absolute;
+  top: .1em;
+  background: #FFF;
+  padding: 0 .25em;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 0.5em;
 }
 
-/**test size for the material**/
-#about,#process,#impact,#development,#team,#contact {
-  height: 100vh;
-  width: 100%;
+/**media query for about h1**/
+@media (max-width:767px){
+  .about-textbox h1 {
+    top: .7em;
+  }
+
+/**typography for h1**/
+h1 {
+  font-size: 3em;
+  font-weight: bold;
 }
 
-/**footer**/
+/**media query for h1**/
+@media (max-width:767px){
+  h1 {
+    font-size: 1.5em;
+  }
+
+/**footer
 footer .row{
   display: flex;
   align-items: center;
@@ -239,4 +285,4 @@ footer ul {
 footer li img {
   width: 32px;
   height: 32px;
-}
+}**/
