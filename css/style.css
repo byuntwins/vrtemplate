@@ -3,18 +3,21 @@
 url('https://fonts.googleapis.com/css?family=Nunito:200,300,400,400i,600,700,800,900');
 
 @import
-url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900');
+url('https://fonts.googleapis.com/css?family=Rubik:400,400i,500,700,900');
 
+/**MISCELLANEOUS**/
+/**box-stuff**/
 * {
   box-sizing: border-box;
 }
 
+/**html and body**/
 html, body {
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 /**container spacing**/
@@ -35,6 +38,27 @@ html, body {
   text-align: center;
 }
 
+/**typography for h1 and p**/
+h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+/**media query for h1 and p**/
+@media (max-width:767px){
+  h1 {
+    font-size: 1.8em;
+  }
+  p {
+    font-size: 1.2em;
+  }
+}
+
+/**NAVIGATION**/
 /**navigation bar**/
 .custom-navigation{
   font-family: 'Nunito', sans-serif;
@@ -155,9 +179,10 @@ html, body {
   }
 }
 
+/**HOME**/
 /**home**/
 #home {
-  background: url('../img/homebackground5.jpg');
+  background: url('../img/homebackground6.jpg');
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -173,7 +198,7 @@ html, body {
 
 /**maintitle**/
 .maintitle {
-  font-size: 2em;
+  font-size: 4em;
   font-weight: bold;
   color: #FFF;
   padding: 1em;
@@ -182,7 +207,7 @@ html, body {
 
 /**subtitle**/
 .subtitle{
-  font-size: 1.2rem;
+  font-size: 1.9em;
   margin: 0 2em;
   color: #FFF;
   display: block;
@@ -190,28 +215,120 @@ html, body {
 }
 
 /**media queries for the titles**/
-@media (min-width:767px){
+@media (max-width:767px){
   .maintitle {
-    font-size: 3.7rem;
+    font-size: 3em;
   }
   .subtitle {
-    font-size:1.7rem;
+    font-size:1.4em;
   }
 }
 
-@media (min-width:400px){
+@media (max-width:600px){
   .maintitle {
-    font-size: 2.8rem;
+    font-size: 2em;
   }
   .subtitle {
-    font-size:1.4rem;
+    font-size:1em;
   }
 }
 
-/**icon row
-#iconRow {
-  padding: 60px 0;
-}**/
+/**ABOUT**/
+/**about**/
+.about-textbox{
+  padding: 4em 20% 4em 20%;
+}
+.about-textbox h1 {
+  padding-bottom: 1em;
+}
+
+.about-textbox h1 p{
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+}
+
+/**PROCRESS**/
+#process {
+  background-color: #f2f2f2;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 2em;
+}
+
+.processbox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 0 0 0.5em 0;
+}
+
+#process h1 {
+  padding: 2.2em 1.5em 1.5em 1.5em;
+  width: 100%;
+  text-align: center;
+}
+
+#process p {
+  font-style: italic;
+  padding: 1em;
+}
+
+#process img {
+  display: block;
+  margin: 0 auto;
+  border: 5px solid black;
+  border-radius: 100%;
+  background-color: #FFF;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.8);
+}
+
+/**IMPACT**/
+#impact {
+  background-color: black;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 2em;
+}
+
+.impactbox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 0 0 0.5em 0;
+}
+
+.impact-textbox {
+  width: 100%;
+  text-align: center;
+}
+
+#impact h1 {
+  padding: 2.2em 1.5em 1.5em 1.5em;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+#impact p {
+  font-style: italic;
+  padding: 1em;
+  color: white;
+}
+
+#impact img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 100%;
+  background-color: #FFF;
+  box-shadow: 2px 2px 5px 0px rgba(242, 242, 242, 0.5);
+}
 
 /**pic
 .container .row img {
@@ -223,44 +340,6 @@ html, body {
   margin: 0;
 }**/
 
-
-/**about**/
-.about-textbox{
-  background-color: #FFF;
-  padding: 4.1em 4em 3.8em 4em;
-  outline: 2px solid black;
-  outline-offset: -2em;
-  position: relative;
-  margin-top: 2em;
-}
-
-.about-textbox h1{
-  position: absolute;
-  top: .1em;
-  background: #FFF;
-  padding: 0 .25em;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 0 0.5em;
-}
-
-/**media query for about h1**/
-@media (max-width:767px){
-  .about-textbox h1 {
-    top: .7em;
-  }
-
-/**typography for h1**/
-h1 {
-  font-size: 3em;
-  font-weight: bold;
-}
-
-/**media query for h1**/
-@media (max-width:767px){
-  h1 {
-    font-size: 1.5em;
-  }
 
 /**footer
 footer .row{
