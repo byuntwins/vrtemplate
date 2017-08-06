@@ -13,4 +13,9 @@ $(document).ready(function(){
       $('#subtitleanimate').addClass('fadeIn');
   }, { offset: '100%' });
 
+
+  $('#bottomarrow').waypoint(function() {
+      $('#bottomarrow').addClass('bounce');
+  }, { offset: '100%' });
+
 });

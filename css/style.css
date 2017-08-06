@@ -200,12 +200,22 @@ p {
   z-index: 10;
 }
 
+.bubblearrow {
+  position: relative;
+  top: 22.5%;
+}
+
 #titleanimate {
   -webkit-animation-duration: 2s;
 }
 
 #subtitleanimate {
   -webkit-animation-duration: 2s;
+}
+
+#bottomarrow {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
 }
 
 /**maintitle**/
@@ -385,11 +395,7 @@ p {
 
 /**DEVELOPMENT**/
 .developmentfather {
-  background-image: url('../img/development.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-origin: content-box;
+  background-color: #F2F2F2;
 }
 
 #development {
@@ -610,7 +616,7 @@ p {
   font-size: 1.2em;
   font-weight: bold;
   color: #FFF;
-  content: 'See more';
+  content: 'CVS';
   position: relative;
   top: 10px;
   transition: all 0.5s;
@@ -654,7 +660,7 @@ p {
   font-size: 1.2em;
   font-weight: bold;
   color: #FFF;
-  content: 'See more';
+  content: 'CVS';
   position: relative;
   top: 10px;
   transition: all 0.5s;
