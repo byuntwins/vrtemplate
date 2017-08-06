@@ -14,6 +14,9 @@
     rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- Custom stylesheet -->
     <link rel="stylesheet" href="css/style.css">
+    <!--animate.css-->
+    <link rel="stylesheet" href="css/animate.css">
+
   </head>
   <body>
 
@@ -36,48 +39,15 @@
 
     <!-- home -->
     <div id="home">
-      <h1 class="maintitle">Medical Images to
+      <h1 id="titleanimate" class="maintitle animated">Medical Images to
         <span style="white-space: nowrap;">VR 3D Models</span></h1>
-      <h3 class="subtitle">View and manually control the accurate,
+      <h3 id="subtitleanimate" class="subtitle animated">View and manually control the accurate,
         <span style="white-space: nowrap;">3D models from the patient</span></h3>
     </div>
 
-    <!-- Icon Row
-    <div class="container">
-      <div id="iconRow" class="row text-center">
-         <div class="col-md-4">
-            <h2>Headline</h2>
-            <i class="fa fa-user-md fa-4x" aria-hidden="true"></i>
-         </div>
-         <div class="col-md-4">
-            <h2>Headline</h2>
-            <i class="fa fa-medkit fa-4x" aria-hidden="true"></i>
-         </div>
-         <div class="col-md-4">
-            <h2>Headline</h2>
-            <i class="fa fa-heartbeat fa-4x" aria-hidden="true"></i>
-         </div>
-      </div>
-    </div>
-  -->
-
-    <!-- pics
-    <div class="container">
-      <div class="row text-center">
-         <div class="col-md-6">
-            <h2>Headline</h2>
-            <img src="../img/homebackground3.jpg" class="img-center">
-         </div>
-         <div class="col-md-6">
-            <h2>Headline</h2>
-            <img src="../img/homebackground4.jpg" class="img-center">
-         </div>
-      </div>
-    </div>-->
-
     <!--About-->
     <div class="container">
-      <section id="about" class="about text-center">
+      <section id="about" class="about text-center animated">
       <div class="about-textbox">
         <h1>About</h1>
         <p>This project aims to allow the physician and the patient to interact on
@@ -92,17 +62,17 @@
     <!--process-->
     <div class="container">
       <div id="process" class="row text-center">
-        <h1>Process</h1>
+        <h1 id = "processtitleanimate" class="animated">Process</h1>
           <div class="processbox">
-            <div class="col-md-4">
+            <div id="processanimate1" class="col-md-4 animated">
               <img src="img/xray.svg" width=150 height=150></img>
               <p>Obtain patient images</p>
             </div>
-            <div class="col-md-4">
+            <div id="processanimate2" class="col-md-4 animated">
               <img src="img/conv.svg" width=150 height=150></img>
               <p>Conversion through volumetric rendering</p>
             </div>
-            <div class="col-md-4">
+            <div id="processanimate3" class="col-md-4 animated">
               <img src="img/virtualreality.svg" width=150 height=150></img>
               <p>Patient education through an immersive experience</p>
             </div>
@@ -114,22 +84,22 @@
     <!--impact-->
     <div class="container">
       <div id="impact" class="row text-center">
-        <h1>Impact</h1>
+        <h1 id="impacttitleanimate" class="animated">Impact</h1>
           <div class="impactbox">
-            <div class="col-md-4">
+            <div id="impactanimate1" class="col-md-4 animated">
               <img src="img/concise.svg" width=150 height=150></img>
               <p>Clear & Concise</p>
             </div>
-            <div class="col-md-4">
+            <div id="impactanimate2" class="col-md-4 animated">
               <img src="img/coherent.svg" width=150 height=150></img>
               <p>Coherent communication</p>
             </div>
-            <div class="col-md-4">
+            <div id="impactanimate3" class="col-md-4 animated">
               <img src="img/dollar.svg" width=150 height=150></img>
               <p>Economic</p>
             </div>
           </div>
-          <div class="impact-textbox">
+          <div id="impactsubtitleanimate" class="impact-textbox animated">
             <p>This immersive experience will redefine the very meaning
              of patient - physician interaction in modern medicine.</p>
           </div>
@@ -137,39 +107,195 @@
     </div>
 
     <!--development-->
-    <section id="development" class="development">
-      <h1>Development</h1>
-    </section>
+    <div class="developmentfather">
+      <div class="container">
+        <div id="development" class="animated">
+          <h1>Development</h1>
+            <div id="carousel" class="carousel slide" data-interval="false">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <video width=100% height=100% class="video-fluid" autoplay loop>
+                    <source src="vid/brainVR.mp4" type="video/mp4">
+                  </video>
+                  <div class="carousel-caption d-none d-md-block">
+                    <p>3D Brain Model in VR</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <video width=100% height=100% class="video-fluid" autoplay loop>
+                    <source src="vid/skeletonVR.mp4" type="video/mp4">
+                  </video>
+                  <div class="carousel-caption d-none d-md-block">
+                    <p>3D Skeletal Model in VR</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <video width=100% height=100% class="video-fluid" autoplay loop>
+                    <source src="vid/heartVR.mp4" type="video/mp4">
+                  </video>
+                  <div class="carousel-caption d-none d-md-block">
+                    <p>3D Heart Model in VR</p>
+                  </div>
+                </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+      </div>
+
+      <!--development2-->
+      <div class="container">
+        <div id="development2" class="row text-center">
+          <div class="developmentbox">
+            <div class="col-md-4">
+              <img id="imganimate1" src="vid/braintumor404.png" class="animated" width=150 height=150></img>
+              <p>3D volumetric display of the tumor’s geometry</p>
+            </div>
+            <div class="col-md-4">
+              <img id="imganimate2" src="vid/abdomen404.png" class="animated" width=150 height=150></img>
+              <p>Color customization for organs and bones</p>
+            </div>
+            <div class="col-md-4">
+              <img id="imganimate3" src="vid/headMR404.png" class="animated" width=150 height=150></img>
+              <p>Volumetric rendering of soft tissues</p>
+            </div>
+            <div class="developmentboxtext">
+              <p>The delivery of highly defined images of soft tissues such as
+                 tendons and ligaments, and the viewing of volumetric images in
+                 different planes on the VR platform are still in the process of
+                 development.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!--team-->
-    <section id="team" class="team">
-      <h1>Team</h1>
-      <div class="team-textbox">
-        <p>Jun Sung Byun is studying computational biology at Cornell University.</p>
-        <p>Jin Sung Byun is studying biology and computer science at Brandeis University.</p>
-    </section>
+    <div class="container">
+      <div id="team" class="row text-center">
+        <h1 id="teamtitle" class="animated">Team</h1>
+          <div class="teambox">
+            <div id="junanimate" class="col-md-6 animated">
+              <div class="vertical">
+                <img src="img/jun404.jpg"></img>
+              </div>
+              <p id="teamname">Jun Sung Byun</p>
+              <div id="info">
+                <div id="infoheader">
+                  <p>Cornell University Class of 2018</p>
+                  <p>Biological Sciences Major: Computational Biology Conc.</p>
+                </div>
+                <div id="detail">
+                  <p>A productive and methodical student with an excellent understanding of biological data analysis.
+                    A skillful problem solver with a quick learning ability and strong communication skills.
+                    Passionate in bioengineering and the application of A.I. programming in scientific  data analysis.</p>
+                </div>
+              </div>
 
-    <!--footer
-    <footer class="container">
-      <h1 id="contact">Contact</h1>
-        <div class="row">
-          <p class="col-sm-4">&copy; 2017 Byun Twins</p>
-          <ul class="col-sm-8">
-            <li class="col-sm-1">
-              <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/twitter.svg">
-            </li>
-            <li class="col-sm-1">
-              <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/facebook.svg">
-            </li>
-            <li class="col-sm-1">
-              <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/instagram.svg">
-            </li>
-            <li class="col-sm-1">
-              <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/medium.svg">
-            </li>
-          </ul>
+              <!--button-->
+              <div class="btnrow">
+                <a href="http://google.com">
+                  <div class='btnjun'></div>
+                </a>
+              </div>
+
+
+              <div class="container-fluid">
+                <div id="rowrowrow" class="row">
+                  <div class="col-sm-6 col-md-6 col-6">
+                    <div id="rjun"></div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-6">
+                    <div id="htmlcssjun"></div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-6">
+                    <div id="sqljun"></div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-6">
+                    <div id="pythonjavajun"></div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div id="jinanimate" class="col-md-6 animated">
+              <div class="horizontal">
+                <img src="img/jin404.jpg"></img>
+              </div>
+              <p id="teamname">Jin Sung Byun</p>
+              <div id="info">
+                <div id="infoheader">
+                  <p>Brandeis University Class of 2018</p>
+                  <p>Biology & Computer Science Major, <span style="white-space: nowrap;">Chemistry Minor</span></p>
+                </div>
+                <div id="detail">
+                  <p>An industrious and focused student who is adept in sciences and computer languages.
+                    Displays strong and gentle leadership to maximize team efficiency, and excels in creative problem solving.
+                    Shares a strong passion about VR and A.I. applications in biological sciences and biotechnology.</p>
+                </div>
+              </div>
+
+              <!--button-->
+              <!--button-->
+              <div class="btnrow">
+                <a href="http://google.com">
+                  <div class='btnjin'></div>
+                </a>
+              </div>
+
+              <div class="container-fluid">
+                <div id="rowrowrow" class="row">
+                  <div class="col-sm-6 col-md-6 col-6">
+                    <div id="rjin"></div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-6">
+                    <div id="htmlcssjin"></div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-6">
+                    <div id="sqljin"></div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-6">
+                    <div id="pythonjavajin"></div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
-    </footer>-->
+      </div>
+
+
+    <!--contact-->
+    <div id="contact">
+      <h1>Contact</h1>
+      <form id="form" action="https://formspree.io/byun2wins@gmail.com" method="POST">
+        <input id="name" type="text" name="name" placeholder="NAME">
+        <input id="email" type="text" name="_replyto" placeholder="E-MAIL">
+        <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+        <input id="submit" type="submit" value="Send">
+      </form>
+    </div>
+
+    <!--footer-->
+    <footer class="container">
+        <div class="row">
+          <p class="col-sm-12">&copy; 2017 Byun</p>
+        </div>
+    </footer>
 
     <!-- jQuery first, then Tether, then Bootstrap JS then jQueryUI. -->
     <script src="js/jquery-3.2.1.min.js"></script>
@@ -180,6 +306,10 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
     crossorigin="anonymous"></script>
 
+    <!--plugins-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.0.1/progressbar.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+
     <!--navshrink js-->
     <script src="js/navshrink.js"></script>
 
@@ -188,5 +318,37 @@
 
     <!--navscroll.js-->
     <script src="js/navscroll.js"></script>
+
+    <!--plugin-->
+    <script src="js/rjun.js"></script>
+    <script src="js/htmlcssjun.js"></script>
+    <script src="js/sqljun.js"></script>
+    <script src="js/pythonjun.js"></script>
+    <script src="js/rjin.js"></script>
+    <script src="js/htmlcssjin.js"></script>
+    <script src="js/sqljin.js"></script>
+    <script src="js/pythonjin.js"></script>
+
+    <!--animate home-->
+    <script src="js/home.js"></script>
+
+    <!--animate development-->
+    <script src="js/development.js"></script>
+
+    <!--animate development2-->
+    <script src="js/development2.js"></script>
+
+    <!--animate about-->
+    <script src="js/about.js"></script>
+
+    <!--animate process-->
+    <script src="js/process.js"></script>
+
+    <!--animate impact-->
+    <script src="js/impact.js"></script>
+
+    <!--animate team-->
+    <script src="js/team.js"></script>
+
   </body>
 </html>
